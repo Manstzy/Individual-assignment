@@ -557,10 +557,6 @@ video {
   margin-left: 1rem;
 }
 
-.ml-64 {
-  margin-left: 16rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -579,10 +575,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .flex {
@@ -605,10 +597,6 @@ video {
   width: 1rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[70\%\] {
   width: 70%;
 }
@@ -619,34 +607,6 @@ video {
 
 .max-w-\[65\%\] {
   max-width: 65%;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
-.max-w-\[340px\] {
-  max-width: 340px;
-}
-
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
-.max-w-\[0px\] {
-  max-width: 0px;
-}
-
-.max-w-\[380px\] {
-  max-width: 380px;
-}
-
-.max-w-\[30px\] {
-  max-width: 30px;
-}
-
-.max-w-\[390px\] {
-  max-width: 390px;
 }
 
 .cursor-grab {
@@ -718,10 +678,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .pt-10 {
@@ -832,9 +788,8 @@ video {
 }
 
 @media (min-width: 390px) {
-  .phone\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  .phone\:ml-52 {
+    margin-left: 13rem;
   }
 
   .phone\:mt-96 {
@@ -853,8 +808,8 @@ video {
     max-width: 490px;
   }
 
-  .phone\:text-\[8px\] {
-    font-size: 8px;
+  .phone\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .phone\:text-base {
@@ -863,19 +818,69 @@ video {
   }
 }
 
-@media (min-width: 490px) {
+@media (min-width: 440px) {
+  .sm\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .sm\:ml-32 {
+    margin-left: 8rem;
+  }
+
   .sm\:block {
     display: block;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .sm\:w-\[\] {
+    width: ;
+  }
+
+  .sm\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .sm\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .sm\:min-w-\[\] {
+    min-width: ;
+  }
+
+  .sm\:min-w-\[490px\] {
+    min-width: 490px;
+  }
+}
+
+@media (min-width: 640px) {
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 }
 
 @media (min-width: 768px) {
+  .lg\:ml-72 {
+    margin-left: 18rem;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

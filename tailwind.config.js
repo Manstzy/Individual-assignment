@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       phone: "390px",
-      sm: "490px",
+      sm: "440px",
       md: "640px",
       lg: "768px",
       xl: "1024",
