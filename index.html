@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment individual</title>
     <link href="./src/output.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/harisenincom.svg">
+    <link rel="shortcut icon" href="images/harisenincom.svg" />
   </head>
   <body>
     <div class="flex h-screen">
-      <div class="max-w-[65%] w-[70%] h-screen phone:w-0 phone:h-0">
+      <div class="max-w-[65%] w-[70%] h-screen phone:hidden sm:block">
         <img class="h-full w-full" src="./images/Rectangle.png" alt="" />
       </div>
-      <div class="pt-10 px-9 min-w-[465px] phone:max-w-[410px]">
-        <img src="./images/Logo.png" alt="" />
-        <p class="text-[#1A1A1A] font-Poppins mt-6 font-bold text-xl phone:text-base">
+      <div class="pt-10 px-9 phone:max-w-[490px] phone:w-[100%]">
+        <img class="hover:scale-105 transition-all cursor-grab" src="./images/Logo.png" alt="" />
+        <p
+          class="text-[#1A1A1A] font-Poppins mt-6 font-bold text-xl phone:text-base"
+        >
           Nice to see you again
         </p>
         <form action="" class="mt-5 flex flex-col justify-center">
@@ -25,7 +27,7 @@
             <input
               type="email"
               value="Email or phone number"
-              class="text-gray-500 bg-gray-200 py-3 ml-4 mt-2 p-2 rounded-md text-md outline-none px-5"
+              class="text-gray-500 bg-gray-200 py-3 ml-4 mt-2 p-2 rounded-md text-md outline-none px-5 hover:scale-105 transition-all"
             />
           </div>
           <div class="flex flex-col mt-2">
@@ -37,28 +39,40 @@
             <input
               type="password"
               value="Enter password"
-              class="text-gray-500 bg-gray-200 py-3 ml-4 mt-2 p-2 rounded-md text-md outline-none px-5"
+              class="text-gray-500 bg-gray-200 py-3 ml-4 mt-2 p-2 rounded-md text-md outline-none px-5 hover:scale-105 transition-all"
             />
           </div>
-          <p
-            class="text-[#007AFF] text-sm ml-64 mt-3 font-semibold font-Poppins"
-          >
-            <a href="#">Forgot password ?</a>
-          </p>
+            <p id="forgotPassword"
+              class="text-[#007AFF] phone:text-[8px] sm:text-sm ml-64 mt-3 font-semibold font-Poppins flex-col hover:text-[#5c40b8] transition-all hover:scale-105"
+            >
+              <a href="#">Forgot password ?</a>
+            </p>
+          <div class="pr-4">
+            <button
+              class="bg-[#8053FF] text-sm font-Poppins font-bold text-white w-96 ml-4 p-3 mt-5 rounded-md phone:w-[100%] transition-all hover:bg-[#473ee9] hover:scale-105 focus:bg-[#5e3bd2]"
+            >
+              Sign in
+            </button>
+            <div
+              class="border-t border-gray-200 mt-5 w-96 ml-4 phone:w-[100%]"
+            ></div>
+            <button
+              class="bg-[#333333] text-sm font-Poppins text-white w-96 ml-4 p-3 mt-5 rounded-md flex items-center justify-center gap-2 phone:w-[100%] transition-all hover:bg-slate-800 hover:scale-105 focus:bg-slate-700 "
+            >
+              <img src="./images/google.png" class="w-4 mb-1 h-4" alt="" />Or
+              sign in with google
+            </button>
+          </div>
         </form>
-        <button
-          class="bg-[#8053FF] text-sm font-Poppins font-bold text-white w-96 ml-4 p-3 mt-5 rounded-md"
+        <p class="text-center mt-5 font-Poppins">
+          Don't have an account?
+          <a class="text-[#8053FF] hover:text-[#5c40b8]  transition-all" href="#">Sign up now</a>
+        </p>
+        <p
+          class="text-center text-[#666666] hover:text-slate-700 transition-all text-sm mt-8 font-Poppins phone:mt-96 lg:mt-10"
         >
-          Sign in
-        </button>
-        <div class="border-t border-gray-200 mt-5 w-96 ml-4"></div>
-        <button
-          class="bg-[#333333] text-sm font-Poppins text-white w-96 ml-4 p-3 mt-5 rounded-md flex items-center justify-center gap-2"
-        >
-          <img src="./images/google.png" class="w-4 mb-1 h-4" alt="">Or sign in with google
-        </button>
-        <p class="text-center mt-5 font-Poppins">Don't have an account? <a class=" text-[#8053FF]" href="#">Sign up now</a></p>
-        <p class="text-center text-[#666666] text-sm mt-8 font-Poppins">&copy; Perfect Login 2021</p>
+          &copy; Perfect Login 2021
+        </p>
       </div>
     </div>
   </body>
